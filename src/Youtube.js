@@ -302,6 +302,7 @@ THE SOFTWARE. */
           break;
 
         case YT.PlayerState.PLAYING:
+          this.trigger('canplay');
           this.trigger('timeupdate');
           this.trigger('durationchange');
           this.trigger('playing');
